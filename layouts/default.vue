@@ -7,9 +7,9 @@
       dark
     >
       <v-toolbar-title style="width: 350px">
-        <a href="/" class="white--text" style="text-decoration: none"
-          ><v-icon>mdi-truck</v-icon>&nbsp;ShipIT</a
-        >
+        <nuxt-link to="/" class="white--text" style="text-decoration: none">
+          <v-icon>mdi-truck</v-icon>&nbsp;ShipIT
+        </nuxt-link>
       </v-toolbar-title>
       <v-text-field
         flat
