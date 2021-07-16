@@ -35,7 +35,12 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-bottom-navigation :value="activeBtn" color="primary" horizontal>
+      <v-bottom-navigation
+        :value="activeBtn"
+        color="primary"
+        horizontal
+        class="justify-start justify-sm-center"
+      >
         <n-link to="/" class="v-btn">
           <span>Home</span>
         </n-link>
@@ -126,7 +131,6 @@ export default {
 
 <style>
 .v-bottom-navigation {
-  justify-content: start !important;
   overflow-x: scroll;
 }
 </style>
