@@ -81,5 +81,9 @@ export default {
 
   webpackConfig: {
     plugins: [new FriendlyErrorsWebpackPlugin()]
+  },
+
+  generate: {
+    routes: ["/blog"]
   }
 };
