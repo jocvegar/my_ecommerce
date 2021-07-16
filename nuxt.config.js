@@ -76,9 +76,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     friendlyErrors: true
-  },
-
-  generate: {
-    routes: ["/blog"]
   }
 };

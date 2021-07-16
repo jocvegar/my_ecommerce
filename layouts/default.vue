@@ -36,9 +36,9 @@
     </v-app-bar>
     <v-main>
       <v-bottom-navigation :value="activeBtn" color="primary" horizontal>
-        <a href="/" class="v-btn">
+        <n-link to="/" class="v-btn">
           <span>Home</span>
-        </a>
+        </n-link>
 
         <v-menu open-on-hover offset-y>
           <template v-slot:activator="{ on }">
@@ -48,22 +48,19 @@
           </template>
 
           <v-card class="mx-auto" max-width="344" outlined>
-            <v-list-item
-              v-for="(item, index) in items"
-              :key="index"
-              href="/shop"
-            >
+            <v-list-item v-for="(item, index) in items" :key="index" to="/shop">
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item>
           </v-card>
         </v-menu>
 
-        <a href="/product" class="v-btn">
+        <n-link to="/product" class="v-btn">
           <span>Product</span>
-        </a>
-        <v-btn href="/blog">
-          <span>Blog</span>
-        </v-btn>
+        </n-link>
+
+        <n-link to="/blog" class="v-btn">
+          <span>Product</span>
+        </n-link>
       </v-bottom-navigation>
     </v-main>
     <router-view />
