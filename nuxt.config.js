@@ -1,5 +1,4 @@
 import colors from "vuetify/es5/util/colors";
-var FriendlyErrorsWebpackPlugin = require("@nuxtjs/friendly-errors-webpack-plugin");
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -77,10 +76,6 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     friendlyErrors: true
-  },
-
-  webpackConfig: {
-    plugins: [new FriendlyErrorsWebpackPlugin()]
   },
 
   generate: {
