@@ -42,9 +42,9 @@
 
         <v-menu open-on-hover offset-y>
           <template v-slot:activator="{ on }">
-            <v-btn v-on="on">
+            <a v-on="on" class="v-btn">
               <span>Shop</span>
-            </v-btn>
+            </a>
           </template>
 
           <v-card class="mx-auto" max-width="344" outlined>
@@ -59,11 +59,16 @@
         </n-link>
 
         <n-link to="/blog" class="v-btn">
-          <span>Product</span>
+          <span>Blog</span>
+        </n-link>
+
+        <n-link to="/blog" class="v-btn">
+          <span>Blog #1</span>
         </n-link>
       </v-bottom-navigation>
     </v-main>
     <router-view />
+
     <v-footer :padless="true">
       <v-card flat tile width="100%" class="secondary white--text text-center">
         <v-card-text>
@@ -118,3 +123,10 @@ export default {
   }
 };
 </script>
+
+<style>
+.v-bottom-navigation {
+  justify-content: start !important;
+  overflow-x: scroll;
+}
+</style>
