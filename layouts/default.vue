@@ -145,4 +145,7 @@ export default {
   height: 100% !important;
   background: white !important;
 }
+.theme--dark.v-btn.v-btn--has-bg {
+  background-color: #272727 !important;
+}
 </style>
