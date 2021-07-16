@@ -142,7 +142,7 @@ export default {
   overflow-x: scroll;
 }
 .reset-button {
-  height: 100%;
-  background: white;
+  height: 100% !important;
+  background: white !important;
 }
 </style>
