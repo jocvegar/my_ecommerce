@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="home">
     <v-app-bar
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
@@ -147,5 +147,8 @@ export default {
 }
 .theme--dark.v-btn.v-btn--has-bg {
   background-color: #272727 !important;
+}
+#home {
+  overflow-x: hidden !important;
 }
 </style>
