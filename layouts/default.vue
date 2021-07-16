@@ -41,7 +41,7 @@
         horizontal
         class="justify-start justify-sm-center"
       >
-        <v-btn>
+        <v-btn class="reset-button">
           <n-link to="/" class="text-decoration-none">
             HOLA
           </n-link>
@@ -49,7 +49,7 @@
 
         <v-menu open-on-hover offset-y>
           <template v-slot:activator="{ on }">
-            <v-btn v-on="on">
+            <v-btn class="reset-button" v-on="on">
               Shop
             </v-btn>
           </template>
@@ -61,19 +61,19 @@
           </v-card>
         </v-menu>
 
-        <v-btn>
+        <v-btn class="reset-button">
           <n-link to="/product" class="text-decoration-none">
             Product
           </n-link>
         </v-btn>
 
-        <v-btn>
+        <v-btn class="reset-button">
           <n-link to="/blog" class="text-decoration-none">
             Blog
           </n-link>
         </v-btn>
 
-        <v-btn>
+        <v-btn class="reset-button">
           <n-link to="/blog" class="text-decoration-none">
             Blog $1
           </n-link>
@@ -140,5 +140,9 @@ export default {
 <style>
 .v-bottom-navigation {
   overflow-x: scroll;
+}
+.reset-button {
+  height: 100%;
+  background: white;
 }
 </style>
