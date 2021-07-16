@@ -6,7 +6,7 @@
         <VuetifyLogo />
       </v-card>
       <v-card>
-        <v-card-title class="headline">
+        <v-card-title class="headline font-weight-black justify-center">
           Welcome to the Vuetify + Nuxt.js template
         </v-card-title>
         <v-card-text v-for="post in posts" :key="post.id">
