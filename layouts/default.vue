@@ -41,15 +41,17 @@
         horizontal
         class="justify-start justify-sm-center"
       >
-        <n-link to="/" class="v-btn">
-          <span>Home</span>
-        </n-link>
+        <v-btn>
+          <n-link to="/" class="text-decoration-none">
+            HOLA
+          </n-link>
+        </v-btn>
 
         <v-menu open-on-hover offset-y>
           <template v-slot:activator="{ on }">
-            <a v-on="on" class="v-btn">
-              <span>Shop</span>
-            </a>
+            <v-btn v-on="on">
+              Shop
+            </v-btn>
           </template>
 
           <v-card class="mx-auto" max-width="344" outlined>
@@ -59,17 +61,23 @@
           </v-card>
         </v-menu>
 
-        <n-link to="/product" class="v-btn">
-          <span>Product</span>
-        </n-link>
+        <v-btn>
+          <n-link to="/product" class="text-decoration-none">
+            Product
+          </n-link>
+        </v-btn>
 
-        <n-link to="/blog" class="v-btn">
-          <span>Blog</span>
-        </n-link>
+        <v-btn>
+          <n-link to="/blog" class="text-decoration-none">
+            Blog
+          </n-link>
+        </v-btn>
 
-        <n-link to="/blog" class="v-btn">
-          <span>Blog #1</span>
-        </n-link>
+        <v-btn>
+          <n-link to="/blog" class="text-decoration-none">
+            Blog $1
+          </n-link>
+        </v-btn>
       </v-bottom-navigation>
     </v-main>
     <router-view />
