@@ -29,7 +29,12 @@
         </v-badge>
       </v-btn>
       <v-btn v-on="on" href="/cart" icon>
-        <v-badge content="2" value="2" color="green" overlap>
+        <v-badge
+          :content="cartItemsCount"
+          :value="cartItemsCount"
+          color="green"
+          overlap
+        >
           <v-icon>mdi-cart</v-icon>
         </v-badge>
       </v-btn>
@@ -120,8 +125,13 @@
   </v-app>
 </template>
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   props: ["on"],
+  computed: {
+    ...mapGetters("cart", ["cartItemsCount"])
+  },
   data() {
     return {
       items: [
