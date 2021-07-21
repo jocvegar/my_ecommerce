@@ -38,7 +38,7 @@
       </v-carousel-item>
     </v-carousel>
 
-    <div class="pl-4 pr-4 row">
+    <div class="row px-5">
       <div class="col-md-6 col-sm-6 col-xs-12">
         <v-card>
           <v-img
@@ -70,7 +70,7 @@
         </v-card>
       </div>
     </div>
-    <div class="pl-4 pr-4 row">
+    <div class="row px-5">
       <div class="col-md-4 col-sm-4 col-xs-12">
         <v-card outlined>
           <v-img
@@ -244,33 +244,33 @@
       <v-container>
         <v-row no-gutters>
           <v-col class="col-12 col-md-4 col-sm-12">
-            <v-row>
-              <v-col class="col-12 col-sm-3 pr-4" align="right">
+            <v-row align="center">
+              <v-col class="col-3 pr-4" align="right">
                 <v-icon class="display-2">mdi-truck</v-icon>
               </v-col>
-              <v-col class="col-12 col-sm-9 pr-4">
+              <v-col class="col-9 pr-4">
                 <h3 class="font-weight-light">FREE SHIPPING & RETURN</h3>
                 <p class="font-weight-thin">Free Shipping over $300</p>
               </v-col>
             </v-row>
           </v-col>
           <v-col class="col-12 col-md-4 col-sm-12">
-            <v-row>
-              <v-col class="col-12 col-sm-3 pr-4" align="right">
+            <v-row align="center">
+              <v-col class="col-3 pr-4" align="right">
                 <v-icon class="display-2">mdi-cash-usd</v-icon>
               </v-col>
-              <v-col class="col-12 col-sm-9 pr-4">
+              <v-col class="col-9 pr-4">
                 <h3 class="font-weight-light">MONEY BACK GUARANTEE</h3>
                 <p class="font-weight-thin">30 Days Money Back Guarantee</p>
               </v-col>
             </v-row>
           </v-col>
           <v-col class="col-12 col-md-4 col-sm-12">
-            <v-row>
-              <v-col class="col-12 col-sm-3 pr-4" align="right">
+            <v-row align="center">
+              <v-col class="col-3 pr-4" align="right">
                 <v-icon class="display-2">mdi-headset</v-icon>
               </v-col>
-              <v-col class="col-12 col-sm-9 pr-4">
+              <v-col class="col-9 pr-4">
                 <h3 class="font-weight-light">020-800-456-747</h3>
                 <p class="font-weight-thin">24/7 Available Support</p>
               </v-col>

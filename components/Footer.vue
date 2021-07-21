@@ -75,7 +75,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="accent--text">
-        {{ new Date().getFullYear() }} — <strong>ShipIT</strong>
+        {{ new Date().getFullYear() }} — <strong>PartyJoC</strong>
       </v-card-text>
     </v-card>
   </v-footer>
