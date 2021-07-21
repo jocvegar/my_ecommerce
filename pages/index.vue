@@ -4,15 +4,23 @@
       <div class="text-center">{{ snackbarText }}</div>
     </v-snackbar>
     <v-carousel hide-delimiters cycle class="mb-5">
-      <v-carousel-item :src="require('../assets/img/home/slider4.jpg')">
+      <v-carousel-item :src="require('../assets/img/home/slider5.jpg')">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-2 white--text pl-5 pr-5 hidden-sm-only">
-            <strong>Upto 60% + Extra 10%</strong>
+            <strong>Welcome</strong>
           </div>
           <br />
         </v-row>
       </v-carousel-item>
-      <v-carousel-item :src="require('../assets/img/home/slider2.jpg')">
+      <v-carousel-item :src="require('../assets/img/home/slider8.jpg')">
+        <v-row class="fill-height" align="center" justify="center">
+          <div class="display-2 white--text pl-5 pr-5 hidden-sm-only">
+            <strong>Nori grape silver beet broccoli kombu</strong>
+          </div>
+          <br />
+        </v-row>
+      </v-carousel-item>
+      <v-carousel-item :src="require('../assets/img/home/slider6.jpg')">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-2 white--text pl-5 pr-5 hidden-sm-only">
             <strong>Upto 60% + Extra 10%</strong>
@@ -23,15 +31,15 @@
       <v-carousel-item :src="require('../assets/img/home/slider3.jpg')">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-2 white--text pl-5 pr-5 hidden-sm-only">
-            <strong>Upto 60% + Extra 10%</strong>
+            <strong>Lleve lleve, compre compre</strong>
           </div>
           <br />
         </v-row>
       </v-carousel-item>
-      <v-carousel-item :src="require('../assets/img/home/slider1.jpg')">
+      <v-carousel-item :src="require('../assets/img/home/slider7.jpg')">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-2 white--text pl-5 pr-5 hidden-sm-only">
-            <strong>Upto 60% + Extra 10%</strong>
+            <strong>Lo mejor para ti</strong>
           </div>
           <br />
         </v-row>
