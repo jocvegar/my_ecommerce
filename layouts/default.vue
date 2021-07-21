@@ -7,8 +7,21 @@
       dark
     >
       <v-toolbar-title style="width: 350px">
-        <nuxt-link to="/" class="white--text" style="text-decoration: none">
-          <v-icon>mdi-truck</v-icon>&nbsp;ShipIT
+        <nuxt-link
+          to="/"
+          class="white--text d-flex align-end"
+          style="text-decoration: none"
+        >
+          <v-img
+            class="mx-2"
+            src="/dj.png"
+            max-height="40"
+            max-width="40"
+            contain
+          ></v-img>
+          <v-toolbar-title class="ml-2 d-none d-sm-flex">
+            Party JoC
+          </v-toolbar-title>
         </nuxt-link>
       </v-toolbar-title>
       <v-text-field
@@ -20,9 +33,31 @@
         class="hidden-sm-and-down pl-10 ml-4"
       />
       <v-spacer />
+
+      <span class="d-none d-sm-flex">
+        <v-tooltip v-if="!$vuetify.theme.dark" bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn v-on="on" color="info" small fab @click="darkMode">
+              <v-icon class="mr-1">mdi-moon-waxing-crescent</v-icon>
+            </v-btn>
+          </template>
+          <span>Dark Mode On</span>
+        </v-tooltip>
+
+        <v-tooltip v-else bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn v-on="on" color="info" small fab @click="darkMode">
+              <v-icon color="yellow">mdi-white-balance-sunny</v-icon>
+            </v-btn>
+          </template>
+          <span>Dark Mode Off</span>
+        </v-tooltip>
+      </span>
+
       <v-btn icon>
         <v-icon>mdi-account-circle</v-icon>
       </v-btn>
+
       <v-btn v-on="on" icon>
         <v-badge content="2" value="2" color="green" overlap>
           <v-icon>mdi-bell</v-icon>
@@ -86,51 +121,23 @@
       </v-bottom-navigation>
     </v-main>
     <router-view />
-
-    <v-footer :padless="true">
-      <v-card flat tile width="100%" class="secondary white--text text-center">
-        <v-card-text>
-          <v-btn class="mx-4 white--text" icon>
-            <v-icon size="24px">mdi-home</v-icon>
-          </v-btn>
-          <v-btn class="mx-4 white--text" icon>
-            <v-icon size="24px">mdi-email</v-icon>
-          </v-btn>
-          <v-btn class="mx-4 white--text" icon>
-            <v-icon size="24px">mdi-calendar</v-icon>
-          </v-btn>
-          <v-btn class="mx-4 white--text" icon>
-            <v-icon size="24px">mdi-delete</v-icon>
-          </v-btn>
-        </v-card-text>
-
-        <v-card-text class="white--text pt-0">
-          Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-          Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
-          accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim
-          a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula
-          lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus
-          iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum
-          tempor vel ut orci. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus.
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>ShipIT</strong>
-        </v-card-text>
-      </v-card>
-    </v-footer>
+    <Footer />
   </v-app>
 </template>
 <script>
 import { mapGetters } from "vuex";
+import Footer from "@/components/Footer.vue";
 
 export default {
   props: ["on"],
+  components: { Footer },
   computed: {
     ...mapGetters("cart", ["cartItemsCount"])
+  },
+  methods: {
+    darkMode() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+    }
   },
   data() {
     return {

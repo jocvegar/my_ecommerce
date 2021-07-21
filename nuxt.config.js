@@ -3,8 +3,7 @@ import colors from "vuetify/es5/util/colors";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - ecommerce",
-    title: "ShopMe",
+    title: "Party JoC",
     htmlAttrs: {
       lang: "en"
     },
@@ -57,22 +56,26 @@ export default {
     theme: {
       themes: {
         light: {
-          primary: "#2D3753",
-          secondary: "#2D3753",
-          accent: "#3AE3D6",
-          error: "#f44336",
-          info: "#2d3753",
-          success: "#7a904a",
-          warning: "#f78012"
+          primary: "#1a1a1a",
+          secondary: "#fff",
+          accent: "#20c997",
+          error: "#d9534f",
+          info: "#1f9bcf",
+          success: "#4bbf73",
+          warning: "#f0ad4e"
         },
         dark: {
-          primary: colors.blue.lighten3,
-          background: colors.indigo.base
+          primary: "#2a9fd6",
+          secondary: "#555",
+          accent: "#20c997",
+          error: "#c00",
+          info: "#93c",
+          success: "#77b300",
+          warning: "#f80"
         }
       }
     }
   },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     friendlyErrors: true
