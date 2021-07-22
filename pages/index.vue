@@ -4,7 +4,7 @@
       <div class="text-center">{{ snackbarText }}</div>
     </v-snackbar>
     <v-carousel hide-delimiters cycle class="mb-5">
-      <v-carousel-item :src="require('../assets/img/home/slider5.jpg')">
+      <v-carousel-item :src="require('../assets/img/home/slider9.jpg')">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-2 white--text pl-5 pr-5 hidden-sm-only">
             <strong>Welcome</strong>
@@ -12,7 +12,7 @@
           <br />
         </v-row>
       </v-carousel-item>
-      <v-carousel-item :src="require('../assets/img/home/slider8.jpg')">
+      <v-carousel-item :src="require('../assets/img/home/slider10.jpg')">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-2 white--text pl-5 pr-5 hidden-sm-only">
             <strong>Nori grape silver beet broccoli kombu</strong>
@@ -306,17 +306,17 @@ export default {
       this.activateSnackBar(this.snackbarText);
     }
   },
-  async asyncData({ $axios }) {
+  async asyncData({ $axios, $commerce }) {
     console.log(chalk.keyword("orange")("I am captain now"));
+
     try {
-      const posts = await $axios.$get(
-        "https://jsonplaceholder.typicode.com/todos"
-      );
-      return { posts };
+      const merchant = await $commerce.merchants.about();
+      return { merchant };
     } catch (e) {
       console.error("Error loading, try again");
       return {
-        posts: [],
+        // posts: [],
+        merchant: "",
         snackbarText: "No cargo esta mierda"
       };
     }

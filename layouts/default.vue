@@ -83,7 +83,7 @@
       >
         <v-btn class="reset-button">
           <n-link to="/" class="text-decoration-none">
-            HOLA
+            Home
           </n-link>
         </v-btn>
 
@@ -95,8 +95,12 @@
           </template>
 
           <v-card class="mx-auto" max-width="344" outlined>
-            <v-list-item v-for="(item, index) in items" :key="index" to="/shop">
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item
+              v-for="(item, index) in categories"
+              :key="index"
+              to="/shop"
+            >
+              <v-list-item-title>{{ item.category.name }}</v-list-item-title>
             </v-list-item>
           </v-card>
         </v-menu>
@@ -148,6 +152,7 @@ export default {
         { title: "Jeans" },
         { title: "Shoes" }
       ],
+      categories: this.$store.state.categories,
       activeBtn: 1
     };
   }

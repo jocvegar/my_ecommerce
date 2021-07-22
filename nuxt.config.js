@@ -10,7 +10,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "description", name: "description", content: "Another Ecommerce" },
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
@@ -28,8 +28,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/snackbar-message"],
-  // plugins: [],
+  plugins: ["~/plugins/snackbar-message", "~/plugins/commerce.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

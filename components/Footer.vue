@@ -5,14 +5,14 @@
         <v-container>
           <v-row>
             <v-col cols="12" md="6" class="text-center text-md-left">
-              <h3 class="py-3 accent--text">Party JoC</h3>
+              <h3 class="py-3 white--text">Party JoC</h3>
               <p class="grey--text text--darken-2">
                 <v-icon size="24px" class="white--text mr-2">
                   mdi-recycle
                 </v-icon>
                 moda sostenible
               </p>
-              <h3 class="py-3 accent--text">MÁS INFORMACIÓN</h3>
+              <h3 class="py-3 white--text">MÁS INFORMACIÓN</h3>
               <p class="grey--text text--darken-2">No aceptamos devoluciones</p>
               <p class="grey--text text--darken-2">
                 Para pre-ordenar contactarnos:
@@ -39,7 +39,7 @@
               </p>
             </v-col>
             <v-col cols="12" md="6" class="text-center text-md-left">
-              <h3 class="py-3 accent--text">REDES SOCIALES</h3>
+              <h3 class="py-3 white--text">REDES SOCIALES</h3>
               <div class="d-flex justify-space-around justify-md-start">
                 <a
                   class="grey--text text--darken-2 text-decoration-none"
@@ -59,7 +59,7 @@
                   </v-icon>
                 </a>
               </div>
-              <h3 class="py-4 accent--text">MÉTODOS DE PAGO</h3>
+              <h3 class="py-4 white--text">MÉTODOS DE PAGO</h3>
               <div
                 class="d-flex justify-space-around justify-md-start grey--text text--darken-2"
               >
@@ -74,7 +74,7 @@
       </v-card-text>
       <v-divider></v-divider>
 
-      <v-card-text class="accent--text">
+      <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>PartyJoC</strong>
       </v-card-text>
     </v-card>
